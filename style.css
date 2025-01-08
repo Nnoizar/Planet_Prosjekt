@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline-color: black;
+}
+
+/*konverterer skriftstørrelse,linjehøyde fra figma og lager egene variable */
+:root {
+    --16pts: 21px;
+    --20lh: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 0%, 72%);
+}
