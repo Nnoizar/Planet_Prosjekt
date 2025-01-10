@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    outline-color: black;
+    outline: 2px solid #ff000088;
 }
+
 
 /*konverterer skriftstørrelse,linjehøyde fra figma og lager egene variable */
 :root {
+    --40pts: 53px;
+    --24pts: 32px;
     --16pts: 21px;
     --20lh: 2rem;
 }
@@ -15,5 +18,59 @@ html {
 }
 
 body {
-    background-color: hsl(0, 0%, 72%);
+    background-color: #D0D0D0;
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+    background-color: #8C8C8C;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.headcontainer {
+    background-color: rgb(84, 59, 59);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.navbar .headcontainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+.navbar .headcontainer ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 40px 0 40px;
+    font-size: var(--24pts);
+}
+
+.navbar .headcontainer h1 {
+    margin-left: 140px;
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-size: var(--40pts);
+    font-style: normal;
+}
+
+#solarsystem {
+    background-image: url(assets/solarsystem.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
 }

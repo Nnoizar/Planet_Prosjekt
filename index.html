@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -11,21 +16,29 @@
 </head>
 
 <header>
-    <a href="#mysection"></a> // link til navbar knappene som scroller til section
-    <section id="mysection"></section> // container element for section
-
+    <nav class="navbar">
+        <div class="headcontainer">
+            <h1>LOGO</h1>
+            <ul><!-- link til navbar knappene som scroller til section-->
+                <li><a href="#solarsystem"></a>solar system</li>
+                <li><a href="#planets"></a>planets</li>
+                <li><a href="#galaxies"></a>galaxies</li>
+            </ul>
+        </div>
+    </nav>
 </header>
+
 
 <body>
     <main>
-        <section class="solarsystem" aria-labelledby="solarsystem">
-            <div class="box"></div>
+        <section id="solarsystem" aria-labelledby="solarsystem"> <!--container element for section-->
+
         </section>
 
-        <section class="planets" aria-labelledby="planets">
+        <section id="planets" aria-labelledby="planets">
         </section>
 
-        <section class="galaxies" aria-labelledby="galaxies">
+        <section id="galaxies" aria-labelledby="galaxies">
         </section>
     </main>
 </body>
