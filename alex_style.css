@@ -88,23 +88,32 @@ body {
     align-content: center;
     text-align: center;
     height: 300px;
-    padding: 0 140px 0 140px;
-    font-weight: 200;
+    padding: 0 450px 0 450px;
 }
+
 
 .galaxiinfo {
-    /*container som rommer alle galaxi containerene*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
     background-color: rgb(74, 74, 74);
+    padding-top: 20px;
     font-weight: 200;
 }
 
-/*ved å sette fast vidde på containeren og og sette auto margins så midstilelr vi containeren inni containeren*/
 .galaxitype {
-    padding-top: 40px;
     display: flex;
-    width: 900px;
-    margin-right: auto;
-    margin-left: auto;
+    align-items: center;
+    max-width: 800px;
+    padding: 40px;
+    margin-bottom: 20px;
+    background: rgb(60, 60, 60);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .infosection {
