@@ -92,18 +92,37 @@ body {
     font-weight: 200;
 }
 
-.galaxiinfo div {
-    background-color: rgba(0, 0, 0, 0.8);
-    align-content: center;
-    text-align: center;
-    height: 300px;
-    padding: 0 140px 0 140px;
+.galaxiinfo {
+    /*container som rommer alle galaxi containerene*/
+    background-color: rgb(74, 74, 74);
     font-weight: 200;
 }
 
+/*ved å sette fast vidde på containeren og og sette auto margins så midstilelr vi containeren inni containeren*/
+.galaxitype {
+    padding-top: 40px;
+    display: flex;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.infosection {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*formaterer alle bildene i seksjonen*/
 .galaxiinfo img {
-    height: 500px;
-    width: auto;
+    height: 300px;
+}
+
+.imgcontainerright {
+    padding-left: 30px;
+}
+
+.imgcontainerleft {
+    padding-right: 30px;
 }
 
 h1 {
@@ -124,4 +143,12 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    align-content: center;
 }
