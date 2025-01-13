@@ -1,0 +1,52 @@
+#planets-section {
+    background: url("assets/human_in_space.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+
+}
+
+.planets-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+
+}
+
+.planet-box {
+    width: 200px;
+    border-radius: 8px;
+    border-bottom: 16px;
+    text-align: center;
+    padding: 1px;
+
+}
+
+.planet-box:hover {
+    transform: scale(1.05);
+}
+
+.planet-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+.info-text {
+    max-width: 800px;
+    margin: 0 auto 16px;
+    text-align: center;
+    color: #f9bbbb;
+}
+
+.info-text h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.info-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
