@@ -4,7 +4,6 @@
     /*outline: 2px solid #ff000088;*/
 }
 
-
 /*konverterer skriftstørrelse,linjehøyde fra figma og lager egene variable */
 :root {
     --40pts: 53px;
