@@ -5,40 +5,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Poppins&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alex_style.css">
+    <link rel="stylesheet" href="henrik_style.css">
     <link rel="icon" href="/Images/favicon.ico">
     <title>Space</title>
 
 </head>
 
-<header>
-    <nav class="navbar">
-        <div class="headcontainer">
-            <h1>LOGO</h1>
-            <ul><!-- link til navbar knappene som scroller til section-->
-                <li><a href="#solarsystem"></a>solar system</li>
-                <li><a href="#planets"></a>planets</li>
-                <li><a href="#galaxies"></a>galaxies</li>
-            </ul>
-        </div>
-    </nav>
-</header>
+
 
 
 <body>
     <main>
-        <section id="solarsystem" aria-labelledby="solarsystem"> <!--container element for section-->
+        <nav class="navbar">
+            <div class="menycontainer">
+                <img src="assets/logo_white.png" alt="logo of a planet">
+                <ul>
+                    <li><a href="#solarsystem">solar system</a></li>
+                    <li><a href="#planets">planets</a></li>
+                    <li><a href="#galaxies">galaxies</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="solarsystem" aria-labelledby="beskrivelse av solarsystem"> <!--container element for section-->
 
+            <div class="textcontainer">
+                <h1>OUR SOLAR SYSTEM</h1>
+                <p>Our solar system is in the Milky Way galaxy and located in an outer spiral arm. This is where we call
+                    “home.” The solar system is made up of some major and minor players, all of which interact with each
+                    other. The solar system consists of our sun, which is a star, and all that its gravity affects. The
+                    planets in our solar system are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.
+                </p>
+            </div>
         </section>
 
         <section id="planets" aria-labelledby="planets">
         </section>
 
         <section id="galaxies" aria-labelledby="galaxies">
+            <div class="textcontainer">
+                <h1>GALAXIES</h1>
+                <p>Galaxies are huge spans of gas, dust, dark matter, and from a million to trillions of stars.
+                    Everything in a galaxy is bound by gravity. Each star in a galaxy is a sun and there are thousands
+                    of solar systems in every galaxy. The idea of galaxies is almost too much for us to comprehend,
+                    especially because scientists are finding thousands of them out in the universe.
+                </p>
+            </div>
+        </section>
+        <section class="galaxiinfo">
+            <div>
+
+                <img src="assets/galaxy_resized/galaxy_andromeda.jpeg" alt="img of andromeda galaxie">
+                <img src="assets/galaxy_resized/galaxy_milky.jpeg" alt="img of milkyway galaxie">
+                <img src="assets/galaxy_resized/galaxy_pinwheel.jpeg" alt="img of pinwheel galaxie">
+                <img src="assets/galaxy_resized/galaxy_sombrero.jpeg" alt="img of sombrero galaxie">
+            </div>
         </section>
     </main>
 </body>
