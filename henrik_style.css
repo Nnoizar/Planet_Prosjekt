@@ -1,3 +1,10 @@
+:root {
+    --40pts: 53px;
+    --24pts: 32px;
+    --16pts: 21px;
+    --20lh: 2rem;
+}
+
 #planets-section {
     background: url("assets/human_in_space.jpg");
     background-size: cover;
@@ -33,7 +40,7 @@
 
 .info-text {
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto 16px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -42,14 +49,15 @@
     color: #fbfbfb;
     background-color: rgba(0, 0, 0, 0.4);
     height: 250px;
-    padding: 0 140px 0 140px;
+    padding: 0 450px 0 450px;
     font-weight: 200;
-
+    font-size: var(--24pts);
+    font-weight: 400;
 }
 
 
 .info-text h1 {
-    font-size: 48px;
+    font-size: var(--24pts);
     margin-bottom: 16px;
 }
 
