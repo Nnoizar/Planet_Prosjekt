@@ -3,7 +3,7 @@
     background-size: cover;
     width: 100%;
     min-height: 100vh;
-    padding: 32px;
+    padding-top: 80px;
 
 }
 
@@ -33,8 +33,12 @@
 
 .info-text {
     max-width: 100%;
-    margin: 0 auto 16px;
+    margin: auto;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     color: #fbfbfb;
     background-color: rgba(0, 0, 0, 0.4);
     height: 250px;
