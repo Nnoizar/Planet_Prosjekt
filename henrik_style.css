@@ -24,9 +24,6 @@
 
 }
 
-.planet-box:hover {
-    transform: scale(1.05);
-}
 
 .planet-box img {
     width: 100%;
@@ -35,15 +32,17 @@
 }
 
 .info-text {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto 16px;
     text-align: center;
     color: #fbfbfb;
     background-color: rgba(0, 0, 0, 0.4);
-    height: 300px;
+    height: 250px;
     padding: 0 140px 0 140px;
     font-weight: 200;
+
 }
+
 
 .info-text h1 {
     font-size: 48px;
@@ -55,49 +54,36 @@
     line-height: 1.5;
 }
 
-/***********************************************/
-/* Flip Card Container                         */
-/***********************************************/
 .flip-card {
     width: 200px;
-    /* match your original .planet-box width */
-    height: 300px;
-    /* adjust the height as needed */
+    height: 200px;
     perspective: 1000px;
-    /* for the 3D flip effect */
     margin: 0;
-    /* remove default margin if undesired */
     border-radius: 8px;
-    /* keep the rounded corners if you like */
     overflow: hidden;
-    /* to ensure the child elements stay clipped */
 }
 
-/* The inner wrapper that actually flips */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s ease;
-    /* smooth flip animation */
     transform-style: preserve-3d;
 }
 
-/* Flip on hover (desktop) */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/***********************************************/
-/* Front and Back Faces of the Card            */
-/***********************************************/
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    /* prevents "mirroring" text */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -107,12 +93,12 @@
     align-items: center;
 }
 
-/* FRONT side styling */
+
 .flip-card-front {
     background-color: transparent;
 }
 
-/* The planet image (front) */
+
 .flip-card-front img {
     width: 100%;
     height: auto;
@@ -120,7 +106,7 @@
     border-radius: 8px;
 }
 
-/* BACK side styling */
+
 .flip-card-back {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
